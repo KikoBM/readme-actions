@@ -1,9 +1,13 @@
 name: GitHub Actions Actualizar README
 on: [push]
 jobs:
-  Actualizar-README:
+  deploy-README:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🔎 The name of your your repository is ${{ github.repository }}."
-      - run: echo mkdocs gh-deploy
+      steps:
+        - uses: actions/checkout@v2
+        - uses: actions/setup-python@v2
+          with:
+            python-version: 3.x
+        - run: pip install mkdocs-material 
+        - run: mkdocs gh-deploy --force
