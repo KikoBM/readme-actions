@@ -1,3 +1,3 @@
 site_name: README CB
-pages :
+nav :
     - Home: 'README.md'
