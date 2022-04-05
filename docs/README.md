@@ -1,4 +1,4 @@
-# esto tendria que aparecer abajo jeje
+# si esto aparece lo he hecho bien 
 
 # cb-eks - EKS infrastructure for Crypto Birds
 
