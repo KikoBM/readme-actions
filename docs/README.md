@@ -1078,3 +1078,5 @@ kubectl set image deployment cluster-autoscaler \
 ```
 kubectl -n kube-system logs -f deployment.apps/cluster-autoscaler
 ```
+
+# esto tendria que aparecer
