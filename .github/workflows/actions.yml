@@ -6,4 +6,4 @@ jobs:
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🔎 The name of your your repository is ${{ github.repository }}."
-      - run: mkdocs gh-deploy
+      - run: echo mkdocs gh-deploy
